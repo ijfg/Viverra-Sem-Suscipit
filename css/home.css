@@ -87,3 +87,26 @@ footer {
 .push {
   margin-left: auto; /* for right button to stay far right */
 }
+
+/* Everything about responsive design */
+
+@media (min-width: 600px) and (max-width:900px) {
+  main {
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1201px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
