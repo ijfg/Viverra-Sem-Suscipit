@@ -29,7 +29,7 @@ nav {
   border-right: 1px solid darkgrey;
 }
 
-.main-nav {
+.main-nav { /* for each navigation link setup*/
   width: 50px;
   height: 30px;
   padding: 5px;
@@ -44,4 +44,12 @@ main {
 
 footer {
   grid-area: ft;
+  display: flex;
+  border-top: 1px solid darkgrey;
+  margin-top: 30px; /* for nav and footer lines not touching */
+  padding: 20px;
+}
+
+.push {
+  margin-left: auto; /* for right button to stay far right */
 }
