@@ -74,8 +74,6 @@ main {
   height: 300px;
   border: 1px solid darkgrey;
   transition: 0.3s;
-  border-radius: 6px;
-  justify-content: center;
 }
 
 .card:hover {
@@ -106,7 +104,7 @@ main {
 }
 
 img, video {
-  border-radius: 6px;
+  width: 100%;
 }
 
 /* Everything about footer */
