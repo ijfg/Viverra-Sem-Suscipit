@@ -65,12 +65,20 @@ main {
 
 .card {
   display: grid;
-  grid-template-rows: auto auto 20px;
+  grid-template-rows: max-content auto 20px;
   width: 250px;
   height: 300px;
   border: 1px solid darkgrey;
   border-radius: 6px;
   justify-content: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .card-footer {
