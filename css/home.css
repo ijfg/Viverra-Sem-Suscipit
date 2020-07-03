@@ -28,7 +28,7 @@ header {
   margin-bottom: 30px; /* for nav and header lines not touching */
 }
 
-a, a:link, a:visited {
+a, a:link,a:visited {
   text-decoration: none;
   color: black;
 }
@@ -38,19 +38,22 @@ a, a:link, a:visited {
 nav {
   grid-area: nav;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: max-content max-content max-content;
+  grid-template-columns: 70px;
+  grid-template-rows: 30px 30px 30px;
   justify-content: center;
   border-right: 1px solid darkgrey;
 }
 
 .main-nav { /* for each navigation link setup*/
-  width: 70px;
-  height: 30px;
-  padding: 5px;
+  width: max-content;
+  justify-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+nav>a:hover, footer>a:hover {
+  border-bottom: 1px solid red;
 }
 
 /* Everything about main content */
