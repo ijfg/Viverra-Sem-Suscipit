@@ -28,7 +28,7 @@ header {
   margin-bottom: 30px; /* for nav and header lines not touching */
 }
 
-header>a, header>a:link, header>a:visited {
+a, a:link, a:visited {
   text-decoration: none;
   color: black;
 }
@@ -45,7 +45,7 @@ nav {
 }
 
 .main-nav { /* for each navigation link setup*/
-  width: 50px;
+  width: 70px;
   height: 30px;
   padding: 5px;
   display: flex;
