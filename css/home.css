@@ -58,6 +58,9 @@ nav {
 main {
   grid-area: main;
   display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  grid-gap:25px;
 }
 
 .card {
