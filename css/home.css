@@ -16,13 +16,21 @@ body {
   font-weight: 300;
 }
 
+/* Everything for header */
+
 header {
   grid-area: head;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid darkgrey;
+  height: 70px;
   margin-bottom: 30px; /* for nav and header lines not touching */
+}
+
+header>a, header>a:link, header>a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
