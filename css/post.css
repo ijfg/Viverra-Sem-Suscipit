@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+  "head head"
+  "nav main"
+  "ft ft";
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+/* Everything about header */
+
+header {
+  grid-area: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid darkgrey;
+  height: 70px;
+  margin-bottom: 30px; /* for nav and header lines not touching */
+}
+
+a, a:link,a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Everything about main navigation */
+
+nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 70px;
+  grid-template-rows: 30px 30px 30px;
+  justify-content: center;
+  border-right: 1px solid darkgrey;
+}
+
+.main-nav { /* for each navigation link setup*/
+  width: max-content;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav>a:hover, footer>a:hover {
+  border-bottom: 1px solid red;
+}
+
+/* Everything about main content */
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  grid-gap:25px;
+}
+
+/* Everything about footer */
+
+footer {
+  grid-area: ft;
+  display: flex;
+  border-top: 1px solid darkgrey;
+  margin-top: 30px; /* for nav and footer lines not touching */
+  padding: 20px;
+}
+
+.push {
+  margin-left: auto; /* for right button to stay far right */
+}
+
+/* Everything about responsive design */
+
+@media (min-width: 600px) and (max-width:900px) {
+  main {
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
