@@ -18,6 +18,11 @@ body {
 
 header {
   grid-area: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid darkgrey;
+  margin-bottom: 30px; /* for nav and header lines not touching */
 }
 
 nav {
