@@ -16,7 +16,7 @@ body {
   font-weight: 300;
 }
 
-/* Everything for header */
+/* Everything about header */
 
 header {
   grid-area: head;
@@ -32,6 +32,8 @@ header>a, header>a:link, header>a:visited {
   text-decoration: none;
   color: black;
 }
+
+/* Everything about main navigation */
 
 nav {
   grid-area: nav;
@@ -51,9 +53,28 @@ nav {
   align-items: center;
 }
 
+/* Everything about main content */
+
 main {
   grid-area: main;
+  display: grid;
 }
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: 250px;
+  height: 300px;
+  border: 1px solid darkgrey;
+  border-radius: 6px;
+  justify-content: center;
+}
+
+.card-footer {
+  border: 1px solid;
+}
+
+/* Everything about footer */
 
 footer {
   grid-area: ft;
