@@ -25,7 +25,9 @@ header {
   align-items: center;
   border-bottom: 1px solid darkgrey;
   height: 70px;
-  margin-bottom: 20px; /* for nav and header lines not touching */
+  margin-bottom: 10px; /* for nav and header lines not touching */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 a, a:link,a:visited {
@@ -72,6 +74,8 @@ main {
 
 .author {
   border-bottom: 1px solid darkgrey;
+  margin-left: 10px;
+  margin-right: 10px;
   grid-area: author;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -83,9 +87,10 @@ main {
 .avatar {
   grid-area: av;
   display: flex;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   justify-content: flex-start;
+  padding-bottom: 10px;
 }
 
 .name-bio {
@@ -114,8 +119,10 @@ footer {
   grid-area: ft;
   display: flex;
   border-top: 1px solid darkgrey;
-  margin-top: 20px; /* for nav and footer lines not touching */
+  margin-top: 10px; /* for nav and footer lines not touching */
   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .push {
