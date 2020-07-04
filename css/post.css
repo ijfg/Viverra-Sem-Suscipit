@@ -43,11 +43,11 @@ a, a:link,a:visited {
   align-items: center;
 }
 
-.title {
+/*.title {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/ /* for top centered post title */
 
 /* Everything about main navigation */
 
@@ -72,7 +72,7 @@ nav>a:hover, footer>a:hover {
   border-bottom: 1px solid red;
 }
 
-/* Everything about main content */
+/* Everything about main */
 
 main {
   grid-area: main;
@@ -82,9 +82,9 @@ main {
   grid-template-areas:
   "author"
   "content";
-  justify-self: center;
-  grid-gap:25px;
 }
+
+/* Everything about author section */
 
 .author {
   border-bottom: 1px solid darkgrey;
@@ -101,8 +101,8 @@ main {
 .avatar {
   grid-area: av;
   display: flex;
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
   justify-content: flex-start;
   padding-bottom: 10px;
 }
@@ -117,7 +117,7 @@ main {
   padding: 10px;
 }
 
-img {
+.avatar>img {
   width: inherit;
   height: inherit;
   object-fit: scale-down;
@@ -125,8 +125,66 @@ img {
 
 p {
   margin:8px;
+  line-height: 1.6;
 }
 
+/* Everything about content */
+
+.content {
+  grid-area: content;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas:
+  "tt"
+  "date"
+  "ph"
+  "text";
+}
+
+.title {
+  grid-area: tt;
+}
+
+h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+time {
+  display: grid;
+  grid-area:date;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+.placeholder {
+  display: grid;
+  grid-area: ph;
+  width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.placeholder>img {
+  width: inherit;
+  height: inherit;
+  object-fit: scale-down;
+}
+
+.text {
+  display: grid;
+  grid-area: text;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 23px;
+  padding: 25px;
+}
 /* Everything about footer */
 
 footer {

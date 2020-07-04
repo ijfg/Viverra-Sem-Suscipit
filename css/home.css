@@ -109,6 +109,10 @@ img, video {
   width: 100%;
 }
 
+blockquote, p {
+  line-height: 1.2;
+}
+
 /* Everything about footer */
 
 footer {
