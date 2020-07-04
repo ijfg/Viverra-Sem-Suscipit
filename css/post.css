@@ -20,11 +20,12 @@ body {
 
 header {
   grid-area: head;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 70px;
+  grid-template-areas:
+  "lg tt";
   border-bottom: 1px solid darkgrey;
-  height: 70px;
   margin-bottom: 10px; /* for nav and header lines not touching */
   margin-left: 10px;
   margin-right: 10px;
@@ -33,6 +34,19 @@ header {
 a, a:link,a:visited {
   text-decoration: none;
   color: black;
+}
+
+#logo {
+  display: flex;
+  padding-left: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Everything about main navigation */
