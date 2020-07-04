@@ -25,7 +25,9 @@ header {
   align-items: center;
   border-bottom: 1px solid darkgrey;
   height: 70px;
-  margin-bottom: 20px; /* for nav and header lines not touching */
+  margin-bottom: 10px; /* for nav and header lines not touching */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 a, a:link,a:visited {
@@ -113,8 +115,10 @@ footer {
   grid-area: ft;
   display: flex;
   border-top: 1px solid darkgrey;
-  margin-top: 20px; /* for nav and footer lines not touching */
-  padding: 20px;
+  margin-top: 10px; /* for nav and footer lines not touching */
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .push {
