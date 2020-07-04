@@ -94,13 +94,13 @@ main {
 }
 
 .name-bio {
-  padding: 10px;
+  padding: 5px;
   grid-area: name;
-  justify-content: center;
 }
 
 .social-media {
   grid-area: sc;
+  padding: 10px;
 }
 
 img {
@@ -110,7 +110,7 @@ img {
 }
 
 p {
-  margin:5px;
+  margin:8px;
 }
 
 /* Everything about footer */
@@ -120,7 +120,7 @@ footer {
   display: flex;
   border-top: 1px solid darkgrey;
   margin-top: 10px; /* for nav and footer lines not touching */
-  padding: 20px;
+  padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
