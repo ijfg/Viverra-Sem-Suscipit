@@ -62,8 +62,50 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "author"
+  "content";
   justify-self: center;
   grid-gap:25px;
+}
+
+.author {
+  border-bottom: 1px solid darkgrey;
+  grid-area: author;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "av name sc";
+}
+
+.avatar {
+  grid-area: av;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  justify-content: flex-start;
+}
+
+.name-bio {
+  padding: 10px;
+  grid-area: name;
+  justify-content: center;
+}
+
+.social-media {
+  grid-area: sc;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+  object-fit: scale-down;
+}
+
+p {
+  margin:5px;
 }
 
 /* Everything about footer */
@@ -81,17 +123,3 @@ footer {
 }
 
 /* Everything about responsive design */
-
-@media (min-width: 600px) and (max-width:900px) {
-  main {
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-  }
-}
