@@ -243,7 +243,11 @@ footer {
 
 @media only screen and (min-width: 768px)  {
   main {
-    grid-template-columns: 600px;
+    grid-template-columns: 580px;
     justify-content: center;
+  }
+
+  .author {
+    padding-top: 3.5em;
   }
 }
