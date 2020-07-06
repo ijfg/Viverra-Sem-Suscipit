@@ -196,6 +196,7 @@ time {
 .text {
   display: grid;
   grid-area: text;
+  padding-bottom: 3em;
 }
 
 .text>p {
@@ -250,5 +251,9 @@ footer {
 
   .author {
     padding-top: 3.5em;
+  }
+
+  .text {
+    padding-bottom: 3.5em;
   }
 }
