@@ -52,10 +52,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.25s;
 }
 
 nav>a:hover, footer>a:hover {
-  border-bottom: 1px solid red;
+  color: darkgrey;
 }
 
 /* Everything about main content */

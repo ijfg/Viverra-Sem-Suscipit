@@ -67,10 +67,11 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  transition: 0.25s;
 }
 
 nav>a:hover, footer>a:hover {
-  border-bottom: 1px solid red;
+  color: darkgrey;
 }
 
 /* Everything about main */
