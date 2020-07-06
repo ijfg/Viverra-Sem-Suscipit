@@ -207,7 +207,7 @@ time {
 .text {
   display: grid;
   grid-area: text;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 .text>p {
