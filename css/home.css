@@ -35,6 +35,11 @@ a, a:link,a:visited {
   color: black;
 }
 
+h1 {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+  letter-spacing: 6px;
+}
+
 /* Everything about main navigation */
 
 nav {
@@ -89,6 +94,7 @@ main {
   align-items: center;
   padding: 20px;
   text-align: center;
+  letter-spacing: 0.8px;
 }
 
 .card-waist {
