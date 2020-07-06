@@ -38,9 +38,19 @@ a, a:link,a:visited {
 
 #logo {
   display: flex;
-  padding-left: 12px;
+  font-size: 13px;
+  padding-top: 2.5px;
+  padding-left: 16px;
   justify-content: center;
   align-items: center;
+}
+
+i.fas{
+  transition: 0.25s;
+}
+
+i.fas:hover {
+  color: darkgrey;
 }
 
 /*.title {
