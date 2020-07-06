@@ -38,6 +38,7 @@ a, a:link,a:visited {
 h1 {
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica;
   letter-spacing: 2px;
+  font-size: 24px;
 }
 
 /* Everything about main navigation */
@@ -143,6 +144,10 @@ footer {
     grid-template-columns: 50% 50%;
     justify-content: center;
   }
+
+  h1 {
+    font-size: 29px;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -150,11 +155,21 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
   }
+
+  h1 {
+    letter-spacing: 7px;
+    font-size: 29px;
+  }
 }
 
 @media (min-width: 1201px) {
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
+  }
+
+  h1 {
+    letter-spacing: 7px;
+    font-size: 29px;
   }
 }
