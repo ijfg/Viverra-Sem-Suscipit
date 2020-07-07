@@ -38,7 +38,6 @@ a, a:link,a:visited {
 
 #logo {
   display: flex;
-  font-size: 13px;
   padding-top: 2.5px;
   padding-left: 16px;
   justify-content: center;
@@ -46,11 +45,11 @@ a, a:link,a:visited {
 }
 
 i.fas{
-  transition: 0.25s;
+  font-size: 28px;
 }
 
 i.fas:hover {
-  color: darkgrey;
+  font-size: 36px;
 }
 
 /*.title {
