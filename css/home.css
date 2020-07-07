@@ -37,12 +37,8 @@ a, a:link,a:visited {
 
 h1 {
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica;
-  letter-spacing: 2px;
-  font-size: 24px;
-}
-
-h1:hover {
-  font-size: 36px;
+  letter-spacing: 1.5px;
+  font-size: 23px;
 }
 
 i.fas {
@@ -164,6 +160,10 @@ footer {
   h1 {
     font-size: 29px;
   }
+
+  h1:hover {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -175,6 +175,10 @@ footer {
   h1 {
     letter-spacing: 7px;
     font-size: 29px;
+  }
+
+  h1:hover {
+    font-size: 36px;
   }
 }
 
