@@ -78,23 +78,23 @@ main {
   justify-self: center;
   grid-gap:10px;
   justify-content: center;
-  padding-bottom: 50px;
 }
 
 .card {
-  background-color: khaki;
+  border: 1px solid darkgrey;
   width: 226px;
   height: 360px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: max-content auto 80px;
-  transition: 3.5s;
   justify-self: center;
-  justify-content: center
+  justify-content: center;
+  transition: 0.2s;
 }
 
 .card:hover {
-  background-color: lightpink;
+  background-color: lightgrey;
+  border:1px solid lightgrey;
 }
 
 .card-header {
@@ -161,13 +161,9 @@ footer {
   h1 {
     font-size: 27px;
   }
-
-  h1:hover {
-    font-size: 33px;
-  }
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 901px) and (max-width:1200px) {
   main {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -178,8 +174,17 @@ footer {
     letter-spacing: 7px;
     font-size: 27px;
   }
+}
 
-  h1:hover {
-    font-size: 33px;
+@media only screen and (min-width: 1201px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+
+  h1 {
+    letter-spacing: 7px;
+    font-size: 27px;
   }
 }
