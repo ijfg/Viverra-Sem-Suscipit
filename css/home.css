@@ -151,7 +151,7 @@ footer {
 
 /* Everything about responsive design */
 
-@media (min-width: 600px) and (max-width:900px) {
+@media only screen and (min-width: 600px) and (max-width:900px) {
   main {
     grid-template-columns: 50% 50%;
     justify-content: center;
@@ -166,7 +166,7 @@ footer {
   }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
+@media only screen and (min-width: 901px) {
   main {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -179,17 +179,5 @@ footer {
 
   h1:hover {
     font-size: 36px;
-  }
-}
-
-@media (min-width: 1201px) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-  }
-
-  h1 {
-    letter-spacing: 7px;
-    font-size: 29px;
   }
 }
