@@ -93,8 +93,8 @@ main {
 }
 
 .card:hover {
-  background-color: lightgrey;
-  border:1px solid lightgrey;
+  background-color: khaki;
+  border:1px solid khaki;
 }
 
 .card-header {
