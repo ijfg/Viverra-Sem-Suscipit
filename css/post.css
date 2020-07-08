@@ -44,11 +44,11 @@ a, a:link,a:visited {
   align-items: center;
 }
 
-i.fas{
+i.fa-hand-spock{
   font-size: 28px;
 }
 
-i.fas:hover {
+i.fa-hand-spock:hover {
   font-size: 36px;
 }
 
@@ -139,13 +139,13 @@ main {
   text-align: right;
 }
 
-i.fab {
+i.s-icon {
   font-size: 1.1em;
   padding-right:.25em;
   transition: 0.25s;
 }
 
-i.fab:hover {
+i.s-icon:hover {
   color: darkgrey;
 }
 
@@ -230,7 +230,7 @@ blockquote {
 /* Everything about footer */
 
 footer {
-  height: 50px;
+  height: 40px;
   grid-area: ft;
   display: flex;
   border-top: 1px solid darkgrey;
