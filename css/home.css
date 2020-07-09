@@ -3,7 +3,7 @@
 @import "icon.css";
 @import "footer.css";
 
-/* Everything about header */
+/* Everything about index page header */
 
 header {
   grid-area: head;
@@ -13,13 +13,13 @@ header {
   border-bottom: 1px solid darkgrey;
   height: 70px;
   margin-bottom: 10px; /* for nav and header lines not touching */
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10px; /* for the left decorative gap */
+  margin-right: 10px; /* for the right decorative gap */
 }
 
 a, a:link,a:visited {
   text-decoration: none;
-  color: black;
+  color: black; /* for header to work as home button with no visual change */
 }
 
 h1 {
@@ -45,8 +45,8 @@ main {
 
 .card {
   border: 1px solid darkgrey;
-  width: 226px;
-  height: 360px;
+  width: 226px; /* Width is set so small screen also has good layout */
+  height: 360px; /* every card is a fixed size no matter screen sizes */
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100px auto 80px;
@@ -66,11 +66,11 @@ main {
   align-items: center;
   padding: 20px;
   text-align: center;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.8px; /* Make headers look visually relaxed a bit */
 }
 
 .card-waist {
-  width: 87%;
+  width: 87%; /* So content is not touching left and right border */
   height: auto;
   display: flex;
   justify-self: center;
@@ -84,7 +84,7 @@ main {
   font-size: 13px;
   justify-self: end;
   align-items: center;
-  padding-right: 20px
+  padding-right: 20px; /* So content is not touching right border */
 }
 
 figure {
@@ -114,7 +114,7 @@ blockquote, p {
   }
 
   h1 {
-    font-size: 27px;
+    font-size: 27px; /* When width allows, h1 font size is bigger */
   }
 }
 
@@ -126,7 +126,7 @@ blockquote, p {
   }
 
   h1 {
-    letter-spacing: 7px;
+    letter-spacing: 7px; /* When width is evern wider, h1 spacing is bigger */
     font-size: 27px;
   }
 }
