@@ -1,6 +1,6 @@
-Viverra Sem suscipit
+Viverra Sem Suscipit
 
-Viverra Sem suscipit is my html/css project for Udacity's Front End Developer Nanodegree Program. It consists of one index page and one post page, and is my very first work online.
+Viverra Sem Suscipit is my html/css project for Udacity's Front End Developer Nanodegree Program. It consists of one index page and one post page, and is my very first work online.
 
 Motivation
 
