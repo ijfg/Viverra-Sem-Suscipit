@@ -14,13 +14,13 @@ header {
   "lg tt";
   border-bottom: 1px solid darkgrey;
   margin-bottom: 10px; /* for nav and header lines not touching */
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10px; /* for the left decorative gap */
+  margin-right: 10px; /* for the right decorative gap */
 }
 
 a, a:link,a:visited {
   text-decoration: none;
-  color: black;
+  color: black; /* for header to work as home button with no visual change */
 }
 
 #logo {
@@ -39,13 +39,12 @@ i.fa-hand-spock:hover {
   font-size: 36px;
 }
 
-
 /* Everything about main */
 
 main {
   grid-area: main;
   display: grid;
-  grid-template-columns: 93%;
+  grid-template-columns: 93%; /* for small screen to maintain decorative gaps */
   grid-template-rows: auto auto;
   grid-template-areas:
   "author"
@@ -179,22 +178,22 @@ blockquote {
 
 @media only screen and (min-width: 600px)  {
   main {
-    grid-template-columns: 80%;
+    grid-template-columns: 80%; /* When space allows, to have more air */
     justify-content: center;
   }
 }
 
 @media only screen and (min-width: 768px)  {
   main {
-    grid-template-columns: 580px;
+    grid-template-columns: 580px; /* Width remains fixed for more white space */
     justify-content: center;
   }
 
   .author {
-    padding-top: 3.5em;
+    padding-top: 3.5em; /* When space allows, to have more air */
   }
 
   .text {
-    padding-bottom: 3.5em;
+    padding-bottom: 3.5em; /* When space allows, to have more air */
   }
 }
