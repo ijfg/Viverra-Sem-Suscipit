@@ -1,20 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display:grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 1fr;
-  grid-template-areas:
-  "head head"
-  "nav main"
-  "ft ft";
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-  Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-}
+@import "body.css";
+@import "nav.css";
+@import "icon.css";
+@import "footer.css";
 
 /* Everything about header */
 
@@ -52,36 +39,6 @@ i.fa-hand-spock:hover {
   font-size: 36px;
 }
 
-/*.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/ /* for top centered post title */
-
-/* Everything about main navigation */
-
-nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: 70px;
-  grid-template-rows: 30px 30px 30px;
-  justify-content: center;
-  border-right: 1px solid darkgrey;
-}
-
-.main-nav { /* for each navigation link setup*/
-  width: max-content;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  transition: 0.25s;
-}
-
-nav>a:hover, footer>a:hover {
-  color: darkgrey;
-}
 
 /* Everything about main */
 
@@ -137,16 +94,6 @@ main {
   padding-bottom: 10px;
   align-self: flex-end;
   text-align: right;
-}
-
-i.s-icon {
-  font-size: 1.1em;
-  padding-right:.25em;
-  transition: 0.25s;
-}
-
-i.s-icon:hover {
-  color: darkgrey;
 }
 
 .avatar>img {
@@ -226,22 +173,6 @@ blockquote {
   padding-bottom: 1.5em;
   padding-right: 0.8em;
   padding-left: 0.8em;
-}
-/* Everything about footer */
-
-footer {
-  height: 40px;
-  grid-area: ft;
-  display: flex;
-  border-top: 1px solid darkgrey;
-  margin-top: 10px; /* for nav and footer lines not touching */
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.push {
-  margin-left: auto; /* for right button to stay far right */
 }
 
 /* Everything about responsive design */

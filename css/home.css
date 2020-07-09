@@ -1,20 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display:grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 1fr;
-  grid-template-areas:
-  "head head"
-  "nav main"
-  "ft ft";
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-  Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-}
+@import "body.css";
+@import "nav.css";
+@import "icon.css";
+@import "footer.css";
 
 /* Everything about header */
 
@@ -41,32 +28,8 @@ h1 {
   font-size: 23px;
 }
 
-i.fas {
+i.t-spock {
   font-size: 21px;
-}
-
-/* Everything about main navigation */
-
-nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: 70px;
-  grid-template-rows: 30px 30px 30px;
-  justify-content: center;
-  border-right: 1px solid darkgrey;
-}
-
-.main-nav { /* for each navigation link setup*/
-  width: max-content;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.25s;
-}
-
-nav>a:hover, footer>a:hover {
-  color: darkgrey;
 }
 
 /* Everything about main content */
@@ -139,33 +102,6 @@ img, video {
 
 blockquote, p {
   line-height: 1.2;
-}
-
-/* Everything about footer */
-
-footer {
-  height: 40px;
-  grid-area: ft;
-  display: flex;
-  border-top: 1px solid darkgrey;
-  margin-top: 10px; /* for nav and footer lines not touching */
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-i.s-icon {
-  font-size: 1.1em;
-  padding-right:.25em;
-  transition: 0.25s;
-}
-
-i.s-icon:hover {
-  color: darkgrey;
-}
-
-.push {
-  margin-left: auto; /* for right button to stay far right */
 }
 
 /* Everything about responsive design */

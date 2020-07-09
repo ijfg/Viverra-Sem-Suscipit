@@ -1,0 +1,9 @@
+i.s-icon {
+  font-size: 1.1em;
+  padding-right:.25em;
+  transition: 0.25s;
+}
+
+i.s-icon:hover {
+  color: darkgrey;
+}

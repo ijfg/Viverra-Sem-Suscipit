@@ -1,0 +1,22 @@
+nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 70px;
+  grid-template-rows: 30px 30px 30px;
+  justify-content: center;
+  border-right: 1px solid darkgrey;
+}
+
+.main-nav { /* for each navigation link setup*/
+  width: max-content;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  transition: 0.25s;
+}
+
+nav>a:hover {
+  color: darkgrey;
+}
