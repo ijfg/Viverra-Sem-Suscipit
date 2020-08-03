@@ -28,6 +28,31 @@ h1 {
   font-size: 23px;
 }
 
+h2, h3, p, a, blockquote {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 0.7px;
+  line-height: normal;
+}
+
+p strong {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+p em {
+  font-style: normal;
+  text-decoration: underline;
+  letter-spacing: 0.1px;
+}
+
+p i {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+  font-style: italic;
+  font-weight: lighter;
+}
+
 i.t-spock {
   font-size: 21px;
 }
