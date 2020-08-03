@@ -113,7 +113,8 @@ main {
   "tt"
   "date"
   "ph"
-  "text";
+  "text"
+  "bh";
   justify-content: center;
 }
 
@@ -130,7 +131,7 @@ h1 {
 
 time {
   display: grid;
-  grid-area:date;
+  grid-area: date;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 16px;
@@ -172,6 +173,19 @@ blockquote {
   padding-bottom: 1.5em;
   padding-right: 0.8em;
   padding-left: 0.8em;
+}
+
+.backhome {
+  grid-area: bh;
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  transition: 0.25s;
+}
+
+.backhome>a:hover {
+  color: darkgrey;
+  transition: 0.25s;
 }
 
 /* Everything about responsive design */
